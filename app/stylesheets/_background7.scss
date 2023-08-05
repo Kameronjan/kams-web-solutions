@@ -1,0 +1,270 @@
+.background-7 {
+  background-image: url("steps.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 665px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .background-7-cards {
+    display: flex;
+    color: white;
+    justify-content: center;
+    width: 100%;
+
+    .subtitler {
+      font-size: 59px;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+
+    .descriptioner {
+      font-size: 20px;
+      text-align: center;
+      opacity: 75%;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .idea-card {
+      width: 350px;
+      height: 440px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 60px;
+      padding: 25px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .design-card {
+      width: 350px;
+      height: 440px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 60px;
+      padding: 25px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .action-card {
+      width: 350px;
+      height: 440px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 60px;
+      padding: 25px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    @media (max-width: 1387px) {
+      .subtitler {
+        font-size: 55px;
+        margin-top: 9px;
+        margin-bottom: 20px;
+      }
+
+      .descriptioner {
+        font-size: 19px;
+      }
+
+      .idea-card {
+        padding: 20px;
+        margin: 50px;
+      }
+
+      .design-card {
+        padding: 20px;
+        margin: 50px;
+      }
+
+      .action-card {
+        padding: 20px;
+        margin: 50px;
+      }
+    }
+
+    @media (max-width: 1190px) {
+      .subtitler {
+        font-size: 55px;
+        margin-top: 9px;
+        margin-bottom: 10px;
+      }
+
+      .descriptioner {
+        font-size: 18px;
+      }
+
+      .idea-card {
+        padding: 15px;
+        margin: 40px;
+        height: 420px;
+      }
+
+      .design-card {
+        padding: 15px;
+        margin: 40px;
+        height: 420px;
+      }
+
+      .action-card {
+        padding: 15px;
+        margin: 40px;
+        height: 420px;
+      }
+    }
+    @media (max-width: 990px) {
+      .fa-4x {
+        font-size: 3em;
+      }
+
+      .subtitler {
+        font-size: 40px;
+        margin-top: 7px;
+        margin-bottom: 10px;
+      }
+
+      .descriptioner {
+        font-size: 17px;
+      }
+
+      .idea-card {
+        padding: 10px;
+        margin: 30px;
+        height: 400px;
+      }
+
+      .design-card {
+        padding: 10px;
+        margin: 30px;
+        height: 400px;
+      }
+
+      .action-card {
+        padding: 10px;
+        margin: 30px;
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 790px) {
+      .fa-4x {
+        font-size: 2em;
+      }
+
+      .subtitler {
+        font-size: 30px;
+        margin-top: 5px;
+        margin-bottom: 8px;
+      }
+
+      .descriptioner {
+        font-size: 16px;
+      }
+
+      .idea-card {
+        padding: 8px;
+        margin: 24px;
+        height: 380px;
+      }
+
+      .design-card {
+        padding: 8px;
+        margin: 24px;
+        height: 380px;
+      }
+
+      .action-card {
+        padding: 8px;
+        margin: 24px;
+        height: 380px;
+      }
+    }
+
+    @media (max-width: 590px) {
+      .fa-4x {
+        font-size: 1.7em;
+      }
+
+      .subtitler {
+        font-size: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .descriptioner {
+        font-size: 15px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .idea-card {
+        padding: 6px;
+        margin: 18px;
+        height: 365px;
+      }
+
+      .design-card {
+        padding: 6px;
+        margin: 18px;
+        height: 365px;
+      }
+
+      .action-card {
+        padding: 6px;
+        margin: 18px;
+        height: 365px;
+      }
+    }
+
+    @media (max-width: 490px) {
+      flex-direction: column;
+      align-items: center;
+
+      .fa-4x {
+        font-size: 1.5em;
+      }
+
+      .subtitler {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      .descriptioner {
+        font-size: 14px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+
+      .idea-card {
+        padding: 5px;
+        margin: 10px;
+        height: 180px;
+        width: 70%;
+      }
+
+      .design-card {
+        padding: 5px;
+        margin: 10px;
+        height: 180px;
+        width: 70%;
+      }
+
+      .action-card {
+        padding: 5px;
+        margin: 10px;
+        height: 180px;
+        width: 70%;
+      }
+    }
+  }
+}
