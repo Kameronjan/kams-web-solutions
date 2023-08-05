@@ -12,32 +12,51 @@
 
   .header-border {
     display: flex;
+    justify-content: center;
 
-    .header {
-      display: flex;
-      justify-content: center;
-      margin-left: 100px;
-      margin-right: 100px;
-      font-size: 21px;
-      font-weight: bold;
-      color: white;
-      text-shadow: 2px 2px 4px black;
+    .container-fluid {
+      padding-left: 0;
+      padding-right: 85px;
 
-      .button-white {
-        background-color: white;
+      .header {
+        display: flex;
+        justify-content: center;
+        margin-left: 100px;
+        margin-right: 100px;
+        font-size: 26px;
+        font-weight: bold;
         color: white;
-        border-color: white;
-      }
+        text-shadow: 2px 2px 4px black;
 
-      a {
-        text-decoration: none;
-        color: white;
-      }
+        .button-white {
+          background-color: white;
+          color: white;
+          border-color: white;
+        }
 
-      a:hover {
-        color: #806BD9;
-        transition: 0.3s;
+        .nav-link {
+          text-decoration: none;
+          color: white;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+
+        .nav-link:hover {
+          color: #806BD9;
+          transition: 0.3s;
+        }
       }
+    }
+  }
+
+  @media (max-width: 1199px) {
+    .header-border {
+      justify-content: flex-start;
+    }
+
+    .header-border .container-fluid .header .nav-link {
+      padding-left: 0px;
+      padding-right: 0px;
     }
   }
 
@@ -68,7 +87,6 @@
         font-size: 25px;
       }
     }
-
     // @media (max-width: 790px) {
     // }
 
@@ -109,6 +127,7 @@
     color: white;
     width: 100%;
     text-align: center;
+    justify-content: center;
 
     .subtitlerr {
       font-size: 32px;
@@ -136,7 +155,7 @@
 
     .web-design-and-development-card {
       width: 350px;
-      height: 300px;
+      height: 280px;
       background-color: rgba(0, 0, 0, 0.5);
       margin: 52px;
       padding: 20px;
@@ -158,6 +177,10 @@
       align-items: center;
       justify-content: center;
       flex-direction: column;
+    }
+
+    *, ::after, ::before {
+      box-sizing: content-box;
     }
 
     @media (max-width: 1387px) {
@@ -396,123 +419,151 @@
 }
 
 .background-3 {
-  // work on height adjustment for media queries
   height: 670px;
   background-color: #816BD9;
   border-bottom: 1px solid black;
+}
 
-  .title-and-subtitle-1{
-    color: white;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    text-align: center;
+.title-and-subtitle-1{
+  color: white;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.title-1{
+  font-size: 40px;
+}
+
+.subtitle-1{
+  font-size: 26px;
+  opacity: 75%;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1387px) {
+  .background-3 {
+    height: 620px;
   }
 
-  .title-1{
-    font-size: 40px;
+  .title-and-subtitle-1 {
+    padding-left: 260px;
+    padding-right: 260px;
   }
 
-  .subtitle-1{
-    font-size: 26px;
-    opacity: 75%;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  .title-1 {
+    font-size: 38px;
   }
 
-  @media (max-width: 1387px) {
-    .title-and-subtitle-1 {
-      padding-left: 260px;
-      padding-right: 260px;
-    }
+  .subtitle-1 {
+    font-size: 24px;
+  }
+}
 
-    .title-1 {
-      font-size: 38px;
-    }
-
-    .subtitle-1 {
-      font-size: 24px;
-    }
+@media (max-width: 1190px) {
+  .background-3 {
+    height: 600px;
   }
 
-  @media (max-width: 1190px) {
-    .title-and-subtitle-1 {
-      padding-left: 210px;
-      padding-right: 210px;
-    }
-
-    .title-1 {
-      font-size: 34px;
-    }
-
-    .subtitle-1 {
-      font-size: 22px;
-    }
+  .title-and-subtitle-1 {
+    padding-left: 210px;
+    padding-right: 210px;
   }
 
-  @media (max-width: 990px) {
-    .title-and-subtitle-1 {
-      padding-left: 150px;
-      padding-right: 150px;
-    }
-
-    .title-1 {
-      font-size: 31px;
-    }
-
-    .subtitle-1 {
-      font-size: 21px;
-    }
+  .title-1 {
+    font-size: 34px;
   }
 
-  @media (max-width: 790px) {
-    .title-and-subtitle-1 {
-      padding-left: 100px;
-      padding-right: 100px;
-    }
+  .subtitle-1 {
+    font-size: 22px;
+  }
+}
 
-    .title-1 {
-      font-size: 28px;
-    }
-
-    .subtitle-1 {
-      font-size: 20px;
-    }
+@media (max-width: 990px) {
+  .title-and-subtitle-1 {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 
-  @media (max-width: 590px) {
-    .title-and-subtitle-1 {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
-    .title-1 {
-      font-size: 25px;
-    }
-
-    .subtitle-1 {
-      font-size: 19px;
-    }
+  .title-1 {
+    font-size: 31px;
   }
 
-  @media (max-width: 490px) {
-    .title-and-subtitle-1 {
-      padding-left: 30px;
-      padding-right: 30px;
-    }
+  .subtitle-1 {
+    font-size: 21px;
+  }
+}
 
-    .title-1 {
-      font-size: 22px;
-    }
+@media (max-width: 790px) {
+  .title-and-subtitle-1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
 
-    .subtitle-1 {
-      font-size: 18px;
-    }
+  .title-1 {
+    font-size: 28px;
+  }
+
+  .subtitle-1 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 590px) {
+  .title-and-subtitle-1 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .title-1 {
+    font-size: 25px;
+  }
+
+  .subtitle-1 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 490px) {
+  .title-and-subtitle-1 {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .title-1 {
+    font-size: 22px;
+  }
+
+  .subtitle-1 {
+    font-size: 18px;
   }
 }
 
 .background-4 {
   display: flex;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    height: 950px;
+  }
+
+  @media (max-width: 790px) {
+    height: 925px;
+  }
+
+  @media (max-width: 690px) {
+    height: 900px;
+  }
+
+  @media (max-width: 590px) {
+    height: 850px;
+  }
+
+  @media (max-width: 490px) {
+    height: 800px;
+  }
 
   .left-1 {
     background-image: url("media.jpg");
@@ -522,9 +573,13 @@
     flex: 1;
     border-right: 0.5px solid black;
     border-bottom: 1px solid black;
+
+    @media (max-width: 990px) {
+      background-image: url("mediapic.png");
+    }
   }
 
-  .right-1{
+  .right-1 {
     height: 800px;
     background-color: #1B1B1B;
     flex: 1;
@@ -656,6 +711,27 @@
 
 .background-5 {
   display: flex;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    height: 950px;
+  }
+
+  @media (max-width: 790px) {
+    height: 925px;
+  }
+
+  @media (max-width: 690px) {
+    height: 900px;
+  }
+
+  @media (max-width: 590px) {
+    height: 850px;
+  }
+
+  @media (max-width: 490px) {
+    height: 800px;
+  }
 
   .left-2 {
     height: 800px;
@@ -799,6 +875,27 @@
 
 .background-6 {
   display: flex;
+
+  @media (max-width: 990px) {
+    flex-direction: column;
+    height: 950px;
+  }
+
+  @media (max-width: 790px) {
+    height: 925px;
+  }
+
+  @media (max-width: 690px) {
+    height: 900px;
+  }
+
+  @media (max-width: 590px) {
+    height: 850px;
+  }
+
+  @media (max-width: 490px) {
+    height: 800px;
+  }
 
   .left-3 {
     background-image: url("marketing.jpg");
@@ -952,6 +1049,7 @@
   .background-7-cards {
     display: flex;
     color: white;
+    justify-content: center;
     width: 100%;
 
     .subtitler {
@@ -1210,105 +1308,127 @@
   }
 }
 
-
 .background-8 {
-  // need to work on height and media queries
   height: 320px;
   background-color: #d9d9d9;
   border: 1px solid black;
+}
 
-  .connect-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.connect-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-    .title-10 {
-      font-size: 59px;
+.title-10 {
+  font-size: 59px;
 
-      .connect-text {
-        margin-top: 25px;
-        margin-bottom: 20px;
-      }
-    }
+  .connect-text {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+}
 
-    .subtitle-10 {
-      font-size: 19px;
-      opacity: 75%;
-    }
+.subtitle-10 {
+  font-size: 19px;
+  opacity: 75%;
+}
 
-    .connect-icons {
-      margin-top: 25px;
+.connect-icons {
+  margin-top: 25px;
 
-      a {
-        text-decoration: none;
-        color: black;
-      }
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
-      a:hover {
-        color: #806BD9;
-        transition: 0.3s;
-      }
-    }
+  a:hover {
+    color: #806BD9;
+    transition: 0.3s;
+  }
+}
 
-    @media (max-width: 1387px) {
-      .title-10 {
-        font-size: 55px;
-      }
+@media (max-width: 1387px) {
+  .background-8 {
+    height: 310px;
+  }
 
-      .subtitle-10 {
-        font-size: 18px;
-      }
-    }
+  .title-10 {
+    font-size: 55px;
+  }
 
-    @media (max-width: 1190px) {
-      .title-10 {
-        font-size: 50px;
-      }
+  .subtitle-10 {
+    font-size: 18px;
+  }
+}
 
-      .subtitle-10 {
-        font-size: 17px;
-      }
-    }
+@media (max-width: 1190px) {
+  .background-8 {
+    height: 290px;
+  }
 
-    @media (max-width: 990px) {
-      .title-10 {
-        font-size: 45px;
-      }
+  .title-10 {
+    font-size: 50px;
+  }
 
-      .subtitle-10 {
-        font-size: 16px;
-      }
-    }
+  .subtitle-10 {
+    font-size: 17px;
+  }
+}
 
-    @media (max-width: 790px) {
-      .title-10 {
-        font-size: 40px;
-      }
+@media (max-width: 990px) {
+  .background-8 {
+    height: 270px;
+  }
 
-      .subtitle-10 {
-        font-size: 15px;
-      }
-    }
+  .title-10 {
+    font-size: 45px;
+  }
 
-    @media (max-width: 590px) {
-      .title-10 {
-        font-size: 35px;
-      }
+  .subtitle-10 {
+    font-size: 16px;
+  }
+}
 
-      .subtitle-10 {
-        font-size: 14px;
-      }
-    }
+@media (max-width: 790px) {
+  .background-8 {
+    height: 250px;
+  }
 
-    @media (max-width: 490px) {
-      .title-10 {
-        font-size: 30px;
-      }
+  .title-10 {
+    font-size: 40px;
+  }
 
-      .subtitle-10 {
-        font-size: 13px;
-      }
-    }
+  .subtitle-10 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 590px) {
+  .background-8 {
+    height: 240px;
+  }
+
+  .title-10 {
+    font-size: 35px;
+  }
+
+  .subtitle-10 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 490px) {
+  .background-8 {
+    height: 230px;
+  }
+
+  .title-10 {
+    font-size: 30px;
+  }
+
+  .subtitle-10 {
+    font-size: 13px;
   }
 }
 
