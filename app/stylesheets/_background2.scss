@@ -1,0 +1,305 @@
+.background-2 {
+  background-image: url("services.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 760px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid black;
+
+  .background-2-cards {
+    display: flex;
+    color: white;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+
+    .subtitlerr {
+      font-size: 32px;
+      margin-bottom: 25px;
+    }
+
+    .descriptionerr {
+      font-size: 20px;
+      opacity: 75%;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+    }
+
+    .social-media-management-card {
+      width: 350px;
+      height: 280px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 52px;
+      padding: 25px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .web-design-and-development-card {
+      width: 350px;
+      height: 280px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 52px;
+      padding: 20px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .digital-marketing-and-seo-card {
+      width: 350px;
+      height: 280px;
+      background-color: rgba(0, 0, 0, 0.5);
+      margin: 52px;
+      padding: 25px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    *, ::after, ::before {
+      box-sizing: content-box;
+    }
+
+    @media (max-width: 1387px) {
+      .subtitlerr {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      .descriptionerr {
+        font-size: 18px;
+      }
+
+      .social-media-management-card {
+        padding: 23px;
+      }
+
+      .web-design-and-development-card {
+        padding: 23px;
+      }
+
+      .digital-marketing-and-seo-card {
+        padding: 23px;
+      }
+    }
+
+    @media (max-width: 1190px) {
+      .subtitlerr {
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .descriptionerr {
+        font-size: 16px;
+      }
+
+      .social-media-management-card {
+        padding: 21px;
+      }
+
+      .web-design-and-development-card {
+        padding: 21px;
+      }
+
+      .digital-marketing-and-seo-card {
+        padding: 21px;
+      }
+    }
+
+    @media (max-width: 990px) {
+      .subtitlerr {
+        font-size: 20px;
+        margin-bottom: 20px;
+      }
+
+      .descriptionerr {
+        font-size: 14px;
+      }
+
+      .social-media-management-card {
+        padding: 12px;
+        height: 250px;
+      }
+
+      .web-design-and-development-card {
+        padding: 12px;
+        height: 250px;
+      }
+
+      .digital-marketing-and-seo-card {
+        padding: 12px;
+        height: 250px;
+      }
+
+      .fa-4x {
+        font-size: 3em;
+      }
+
+      .social-media-management-icon {
+        height: 70px;
+      }
+
+      .digital-marketing-and-seo-icon {
+        height: 70px;
+      }
+
+      .web-design-and-development-icon {
+        height: 70px;
+      }
+    }
+
+    @media (max-width: 790px) {
+      .subtitlerr {
+        font-size: 15px;
+        margin-bottom: 15px;
+      }
+
+      .descriptionerr {
+        font-size: 10px;
+      }
+
+      .social-media-management-card {
+        padding: 8px;
+        height: 225px;
+      }
+
+      .web-design-and-development-card {
+        padding: 8px;
+        height: 225px;
+      }
+
+      .digital-marketing-and-seo-card {
+        padding: 8px;
+        height: 225px;
+      }
+
+      .fa-4x {
+        font-size: 2em;
+      }
+
+      .social-media-management-icon {
+        height: 60px;
+      }
+
+      .digital-marketing-and-seo-icon {
+        height: 60px;
+      }
+
+      .web-design-and-development-icon {
+        height: 60px;
+      }
+    }
+
+    @media (max-width: 590px) {
+      .subtitlerr {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+
+      .descriptionerr {
+        font-size: 10px;
+      }
+
+      .social-media-management-card {
+        padding: 4px;
+        height: 200px;
+        margin: 30px;
+        margin-top: 250px;
+      }
+
+      .web-design-and-development-card {
+        padding: 4px;
+        height: 200px;
+        margin: 30px;
+        margin-bottom: 250px;
+      }
+
+      .digital-marketing-and-seo-card {
+        padding: 4px;
+        height: 200px;
+        margin: 30px;
+        margin-top: 250px;
+      }
+
+      .fa-4x {
+        font-size: 2em;
+      }
+
+      .social-media-management-icon {
+        height: 55px;
+      }
+
+      .digital-marketing-and-seo-icon {
+        height: 55px;
+      }
+
+      .web-design-and-development-icon {
+        height: 55px;
+      }
+    }
+
+    @media (max-width: 490px) {
+      flex-direction: column;
+      align-items: center;
+
+      .subtitlerr {
+        font-size: 16px;
+        margin-bottom: 16px;
+      }
+
+      .descriptionerr {
+        font-size: 14px;
+      }
+
+      .social-media-management-card  {
+        margin-bottom: 20px;
+        padding: 10px;
+        height: 140px;
+        margin: 25px;
+        width: 70%;
+      }
+
+      .web-design-and-development-card {
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 10px;
+        height: 140px;
+        margin: 25px;
+        width: 70%;
+      }
+
+      .digital-marketing-and-seo-card {
+        margin-top: 20px;
+        padding: 10px;
+        height: 140px;
+        margin: 25px;
+        width: 70%;
+      }
+
+      .fa-4x {
+        font-size: 2em;
+      }
+
+      .social-media-management-icon {
+        height: 60px;
+      }
+
+      .digital-marketing-and-seo-icon {
+        height: 60px;
+      }
+
+      .web-design-and-development-icon {
+        height: 60px;
+      }
+    }
+  }
+}
